@@ -29,13 +29,13 @@ int main() {
         stdList[i].cgpa = (stdList[i].gpaCSE_103 * 4.5 + stdList[i].gpaMAT_101 * 3.0 + stdList[i].gpaENG_7101 * 3.0) / (4.5 + 3.0 + 3.0);
     }
 
-    fprintf(outFile, "----------------------------------------------------------\n");
-    fprintf(outFile, "%-10s %-20s %-6s %-6s %-6s %-4s\n", "ID", "Name", "CSE103", "MAT101", "ENG101", "CGPA");
-    fprintf(outFile, "----------------------------------------------------------\n");
+    fprintf(outFile, "------------------------------------------------\n");
+    fprintf(outFile, "%-10s %-10s %-6s %-6s %-6s %-4s\n", "ID", "Name", "CSE103", "MAT101", "ENG101", "CGPA");
+    fprintf(outFile, "------------------------------------------------\n");
     for (i = 0; i < n; i++) {
-        fprintf(outFile, "%-10d %-20s %-6.2f %-6.2f %-6.2f %-4.2f\n", stdList[i].stdID, stdList[i].stdName, stdList[i].gpaCSE_103, stdList[i].gpaMAT_101, stdList[i].gpaENG_7101, stdList[i].cgpa);
+        fprintf(outFile, "%-10d %-10s %-6.2f %-6.2f %-6.2f %-4.2f\n", stdList[i].stdID, stdList[i].stdName, stdList[i].gpaCSE_103, stdList[i].gpaMAT_101, stdList[i].gpaENG_7101, stdList[i].cgpa);
     }
-    fprintf(outFile, "----------------------------------------------------------\n");
+    fprintf(outFile, "------------------------------------------------\n");
 
     fclose(inFile);
     fclose(outFile);
