@@ -1,5 +1,5 @@
 //Name: Md. Jahidul Islam
-//Student ID: 2026-2-60-209
+//ID: 2026-2-60-209
 
 #include <stdio.h>
 
