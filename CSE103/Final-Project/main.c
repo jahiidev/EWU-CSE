@@ -17,8 +17,8 @@ int main() {
 
     struct stdData stdList[100];
     int n, i;
+    
     fscanf(inFile, "%d", &n);
-
     for (i = 0; i < n; i++) {
         fscanf(inFile, "%d", &stdList[i].stdID);
         fscanf(inFile, "%s", stdList[i].stdName);
